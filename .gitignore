@@ -1,0 +1,5 @@
+#   Editor settings
+.vscode/
+
+#   Cache
+__pycache__/
