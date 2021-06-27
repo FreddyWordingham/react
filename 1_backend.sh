@@ -5,15 +5,33 @@ python3 manage.py migrate;
 python3 manage.py runserver;
 
 # Add todo to backend/backend/settings.py
-    # INSTALLED_todoS = [
-    #     'django.contrib.admin',
-    #     'django.contrib.auth',
-    #     'django.contrib.contenttypes',
-    #     'django.contrib.sessions',
-    #     'django.contrib.messages',
-    #     'django.contrib.staticfiles',
-    #     'todo',
-    # ]
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     'corsheaders',
+#     'rest_framework',
+#     'todo',
+# ]
+
+# MIDDLEWARE = [
+#     'django.middleware.security.SecurityMiddleware',
+#     'django.contrib.sessions.middleware.SessionMiddleware',
+#     'django.middleware.common.CommonMiddleware',
+#     'django.middleware.csrf.CsrfViewMiddleware',
+#     'django.contrib.auth.middleware.AuthenticationMiddleware',
+#     'django.contrib.messages.middleware.MessageMiddleware',
+#     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+#     'corsheaders.middleware.CorsMiddleware',
+# ]
+
+# Add to the bottom of backend/backend/settings.py
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:3000'
+# ]
 
 # Add models to backend/todo/models.py
     # class Todo(models.Model):
